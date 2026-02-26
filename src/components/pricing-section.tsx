@@ -70,7 +70,7 @@ export function PricingSection() {
                 <CardTitle className="text-2xl font-display font-bold">{tier.name}</CardTitle>
                 <CardDescription className="mt-4 flex items-baseline gap-x-2">
                   <span className="text-5xl font-bold tracking-tight text-foreground">{tier.price}</span>
-                  <span className="text-sm font-semibold leading-6 text-muted-foreground">/lifetime</span>
+                  <span className="text-sm font-semibold leading-6 text-muted-foreground">/month</span>
                 </CardDescription>
                 <p className="mt-6 text-base leading-7 text-muted-foreground">{tier.description}</p>
               </CardHeader>

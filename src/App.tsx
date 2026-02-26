@@ -2,6 +2,7 @@ import { Navbar } from './components/navbar';
 import { Hero } from './components/hero';
 import { TrustVideo } from './components/trust-video';
 import { FeaturesComparison } from './components/features-comparison';
+import { PricingSection } from './components/pricing-section';
 import { Testimonials } from './components/testimonials';
 import { AuditSection } from './components/audit-section';
 import { Footer } from './components/footer';
@@ -15,6 +16,7 @@ function App() {
         <TrustVideo />
         <Testimonials />
         <FeaturesComparison />
+        <PricingSection />
         <AuditSection />
       </main>
       <Footer />

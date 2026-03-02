@@ -5,29 +5,13 @@ import { cn } from '@/lib/utils';
 
 const tiers = [
   {
-    name: 'Free',
-    id: 'tier-free',
-    href: 'https://wordpress.org/plugins/gleo',
-    price: '$0',
-    description: 'Perfect for getting started with SEO automation.',
-    features: [
-      'Basic SEO Analysis',
-      'AI Content Generation (Limited)',
-      'Meta Tag Optimization',
-      'Sitemap Generation',
-      'Community Support',
-    ],
-    buttonText: 'Install Free Plugin',
-    mostPopular: false,
-  },
-  {
     name: 'Pro',
     id: 'tier-pro',
     href: '#',
     price: '$59',
-    description: 'Advanced features for professional websites.',
+    description: 'Advanced SEO features for professional WordPress sites.',
     features: [
-      'Everything in Free',
+      '1 Free SEO Audit (Get Started)',
       'Unlimited AI Content Generation',
       'Competitor Analysis',
       'Bulk Optimization',
@@ -46,26 +30,24 @@ export function PricingSection() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary">Pricing</h2>
           <p className="mt-2 text-4xl font-display font-bold tracking-tight text-foreground sm:text-5xl">
-            Simple, transparent pricing
+            Ready to dominate search?
           </p>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Choose the plan that's right for you and start optimizing your WordPress site today.
+            Get your first SEO audit for free, then upgrade to Pro for unlimited power.
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-y-6 sm:mt-20 lg:max-w-4xl lg:grid-cols-2 lg:gap-x-8">
+        <div className="mx-auto mt-16 flex justify-center sm:mt-20">
           {tiers.map((tier) => (
             <Card
               key={tier.id}
               className={cn(
-                'relative flex flex-col justify-between transition-all duration-300 hover:shadow-elegant border-2',
+                'relative flex flex-col justify-between transition-all duration-300 hover:shadow-elegant border-2 max-w-md w-full',
                 tier.mostPopular ? 'border-primary shadow-elegant bg-background' : 'border-transparent bg-background/50'
               )}
             >
-              {tier.mostPopular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary to-secondary text-white text-sm font-bold rounded-full shadow-lg">
-                  Most Popular
-                </div>
-              )}
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary to-secondary text-white text-sm font-bold rounded-full shadow-lg">
+                Recommended
+              </div>
               <CardHeader>
                 <CardTitle className="text-2xl font-display font-bold">{tier.name}</CardTitle>
                 <CardDescription className="mt-4 flex items-baseline gap-x-2">
@@ -88,13 +70,11 @@ export function PricingSection() {
                 <Button
                   className={cn(
                     'w-full rounded-full py-6 text-base font-bold transition-all duration-300',
-                    tier.mostPopular
-                      ? 'bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-elegant'
-                      : 'bg-muted hover:bg-muted/80 text-foreground'
+                    'bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-elegant'
                   )}
                   onClick={() => tier.href !== '#' && window.open(tier.href, '_blank')}
                 >
-                  {tier.name === 'Pro' && <Zap className="mr-2 h-5 w-5 fill-current" />}
+                  <Zap className="mr-2 h-5 w-5 fill-current" />
                   {tier.buttonText}
                 </Button>
               </CardFooter>

@@ -69,19 +69,13 @@ export function TrustVideo() {
             transition={{ duration: 0.8 }}
             className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl group border-4 border-white/10"
           >
-            {/* Mock Video Placeholder */}
-            <img
-              src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=2070&auto=format&fit=crop"
-              alt="Gleo Demo Thumbnail"
-              className="w-full h-full object-cover transition-smooth group-hover:scale-105 opacity-60"
-            />
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-              <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center text-white shadow-elegant group-hover:scale-110 transition-smooth cursor-pointer">
-                <Play className="w-8 h-8 fill-current ml-1" />
-              </div>
-            </div>
-            {/* Glossy Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent pointer-events-none" />
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/Stw0LRJtrE0"
+              title="Gleo in Action"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </motion.div>
         </div>
       </div>

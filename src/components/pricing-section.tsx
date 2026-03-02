@@ -30,10 +30,11 @@ export function PricingSection() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary">Pricing</h2>
           <p className="mt-2 text-4xl font-display font-bold tracking-tight text-foreground sm:text-5xl">
-            Ready to dominate search?
+            Professional SEO, Starting at $0
           </p>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Get your first SEO audit for free, then upgrade to Pro for unlimited power.
+            Get your first SEO audit for free. Low initial cost, powerful results. 
+            Upgrade to Pro for just $59/month to unlock unlimited automation.
           </p>
         </div>
         <div className="mx-auto mt-16 flex justify-center sm:mt-20">

@@ -9,7 +9,7 @@ const testimonials = [
     avatar: "https://i.pravatar.cc/150?u=sarah",
   },
   {
-    quote: "Finally visible in Perplexity. This is the missing piece for AI-era SEO.",
+    quote: "Finally visible in Perplexity. This is the missing piece for AI-era GEO.",
     author: "Mike T.",
     role: "Local Business Owner",
     avatar: "https://i.pravatar.cc/150?u=mike",

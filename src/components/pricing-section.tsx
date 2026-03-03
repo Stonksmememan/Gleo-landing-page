@@ -11,7 +11,7 @@ const tiers = [
     price: '$59',
     description: 'Advanced SEO features for professional WordPress sites.',
     features: [
-      '1 Free SEO Audit (Get Started)',
+      '1 Free GEO Audit (Get Started)',
       'Unlimited AI Content Generation',
       'Competitor Analysis',
       'Bulk Optimization',
@@ -30,10 +30,10 @@ export function PricingSection() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary">Pricing</h2>
           <p className="mt-2 text-4xl font-display font-bold tracking-tight text-foreground sm:text-5xl">
-            Professional SEO, Starting at $0
+            Professional GEO, Starting at $0
           </p>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Get your first SEO audit for free. Low initial cost, powerful results. 
+            Get your first GEO audit for free. Low initial cost, powerful results. 
             Upgrade to Pro for just $59/month to unlock unlimited automation.
           </p>
         </div>

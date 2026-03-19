@@ -6,7 +6,7 @@ const comparisonData = [
   { feature: 'AI Citation Tracking', gleo: true, seo: 'Limited', agency: true },
   { feature: 'Auto Schema Injection', gleo: 'One-Click', seo: 'Partial', agency: 'Manual' },
   { feature: 'Before/After Previews', gleo: true, seo: false, agency: 'Sometimes' },
-  { feature: 'Pricing', gleo: '$0 Free / $59 Pro', seo: '$99+', agency: '$1k+/mo' },
+  { feature: 'Pricing', gleo: '$59/mo Pro', seo: '$99+', agency: '$1k+/mo' },
   { feature: 'Setup Time', gleo: '60 seconds', seo: 'Hours', agency: 'Weeks' },
 ];
 

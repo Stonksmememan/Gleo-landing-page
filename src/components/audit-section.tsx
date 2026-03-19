@@ -46,7 +46,7 @@ export function AuditSection() {
           <Sparkles className="absolute -bottom-6 -left-6 w-8 h-8 text-secondary animate-float" style={{ animationDelay: '1s' }} />
 
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">See If AI Is Ignoring Your Site – <span className="text-gradient">For Free</span></h2>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">See If AI Is <span className="text-gradient">Ignoring Your Site</span></h2>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Our AI visibility engine scans your site across ChatGPT, Perplexity, Gemini, and Claude to see how much organic traffic you are losing.
             </p>

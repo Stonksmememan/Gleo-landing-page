@@ -70,7 +70,7 @@ export function PricingSection() {
                 <Button
                   className={cn(
                     'w-full rounded-full py-6 text-base font-bold transition-all duration-300',
-                    'bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-elegant'
+                    'bg-gradient-persistent hover:opacity-90 shadow-elegant'
                   )}
                   onClick={() => tier.href !== '#' && window.open(tier.href, '_blank')}
                 >

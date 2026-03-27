@@ -64,7 +64,7 @@ export function Navbar() {
             {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </Button>
           <Button
-            className="rounded-full px-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-elegant transition-smooth"
+            className="rounded-full px-6 bg-gradient-persistent hover:opacity-90 shadow-elegant transition-smooth"
             onClick={() => window.open('https://wordpress.org/plugins/gleo', '_blank')}
           >
             Install Free Plugin
@@ -106,7 +106,7 @@ export function Navbar() {
               </a>
             ))}
             <Button
-              className="w-full rounded-full bg-gradient-to-r from-primary to-secondary"
+              className="w-full rounded-full bg-gradient-persistent"
               onClick={() => window.open('https://wordpress.org/plugins/gleo', '_blank')}
             >
               Install Free Plugin

@@ -90,6 +90,17 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
   
+  .bg-gradient-persistent {
+    background-color: hsl(var(--primary)) !important;
+    background-image: var(--gradient-primary) !important;
+  }
+
+  .bg-gradient-persistent:hover,
+  .bg-gradient-persistent:focus-visible,
+  .bg-gradient-persistent:active {
+    background-image: var(--gradient-primary) !important;
+  }
+  
   .glass {
     @apply backdrop-blur-md bg-white/5 border border-white/10;
   }

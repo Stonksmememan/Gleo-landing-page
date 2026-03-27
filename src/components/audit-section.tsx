@@ -75,7 +75,7 @@ export function AuditSection() {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="h-16 rounded-2xl bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-smooth text-lg font-bold shadow-elegant group relative overflow-hidden"
+              className="h-16 rounded-2xl bg-gradient-persistent hover:scale-105 transition-smooth text-lg font-bold shadow-elegant group relative overflow-hidden"
             >
               {isSubmitting ? (
                 <>

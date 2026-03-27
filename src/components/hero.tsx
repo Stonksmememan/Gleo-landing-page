@@ -54,7 +54,7 @@ export function Hero() {
         >
           <Button
             size="lg"
-            className="rounded-full px-8 h-14 text-lg bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-smooth shadow-elegant"
+            className="rounded-full px-8 h-14 text-lg bg-gradient-persistent hover:scale-105 transition-smooth shadow-elegant"
             onClick={() => document.getElementById('audit')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Run Free AI Visibility Audit Now

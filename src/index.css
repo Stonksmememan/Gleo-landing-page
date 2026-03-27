@@ -89,6 +89,14 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
+
+  .text-gradient-persistent {
+    @apply text-transparent bg-gradient-to-r from-primary to-secondary;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+  }
   
   .bg-gradient-persistent {
     background-color: hsl(var(--primary)) !important;

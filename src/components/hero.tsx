@@ -34,7 +34,14 @@ export function Hero() {
           className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-8 leading-[1.1]"
         >
           Be the answer AI gives <br />
-          <span className="text-gradient-persistent">to your customer.</span>
+          <span
+            className="text-gradient-persistent"
+            style={{
+              backgroundImage: 'var(--gradient-primary)',
+            }}
+          >
+            to your customer.
+          </span>
         </motion.h1>
 
         <motion.p

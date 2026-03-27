@@ -91,11 +91,20 @@
   }
 
   .text-gradient-persistent {
-    @apply text-transparent bg-gradient-to-r from-primary to-secondary;
-    background-clip: text !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    color: transparent !important;
+    display: inline-block;
+    color: hsl(var(--primary)) !important;
+    background-image: var(--gradient-primary) !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+  }
+
+  @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .text-gradient-persistent {
+      background-clip: text !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      color: transparent !important;
+    }
   }
   
   .bg-gradient-persistent {

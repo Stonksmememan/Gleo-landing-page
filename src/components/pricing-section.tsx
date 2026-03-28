@@ -19,7 +19,6 @@ const tiers = [
       'Custom Branding',
     ],
     buttonText: 'Get Started with Pro',
-    mostPopular: true,
   },
 ];
 
@@ -40,14 +39,8 @@ export function PricingSection() {
           {tiers.map((tier) => (
             <Card
               key={tier.id}
-              className={cn(
-                'relative flex flex-col justify-between transition-all duration-300 hover:shadow-elegant border-2 max-w-md w-full',
-                tier.mostPopular ? 'border-primary shadow-elegant bg-background' : 'border-transparent bg-background/50'
-              )}
+              className="flex flex-col justify-between transition-all duration-300 hover:shadow-elegant border max-w-md w-full bg-background"
             >
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-primary to-secondary text-white text-sm font-bold rounded-full shadow-lg">
-                Recommended
-              </div>
               <CardHeader>
                 <CardTitle className="text-2xl font-display font-bold">{tier.name}</CardTitle>
                 <CardDescription className="mt-4 flex items-baseline gap-x-2">
